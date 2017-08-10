@@ -1,3 +1,3 @@
-class Post < ApplicationRecord
+class Project < ApplicationRecord
   validates :title, presence: true
 end
