@@ -1,0 +1,43 @@
+<h1 class = "text-center" id= "page_title">Contact Jennifer</h1>
+
+<div class="container-contact">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="form-contact">
+
+
+        <%= form_for @contact do |f| %>
+        <div class="text-center">
+          <%= f.label :name %>
+          <%= f.text_field :name, required: true %>
+        </div>
+        <br>
+        <br>
+        <div class="text-center">
+          <%= f.label :email %>
+          <%= f.email_field :email, required: true %>
+        </div>
+        <br>
+        <br>
+        <div class="text-center">
+          <%= f.label :message %>
+          <%= f.text_area :message, as: :text %>
+        </div>
+
+      <br>
+      <div class="hidden">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, hint: 'leave this field blank' %>
+      </div>
+      <div class="text-center">
+      <%= f.submit 'Send Message', class: "btn btn-success" %>
+      </div>
+      </div>
+      <%end%>
+
+
+    </div>
+  </div>
+</div>
+
+
