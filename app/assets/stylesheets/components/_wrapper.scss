@@ -1,0 +1,35 @@
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 4rem 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.form-contact {
+  padding: 30px 20px;
+  background: #f9f9f9;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #ECECEC;
+  margin: auto;
+  width: 500px;
+}
+
+.container-contact {
+  padding: 50px 30px;
+  margin-bottom: 110px;
+ }
+
+label {
+  display: inline-block;
+  max-width: 100%;
+}
